@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,7 +41,11 @@ namespace BootcampClassLibrary1
             sb.AppendLine();
 
             sb.AppendLine($"The integer is {i}. The decimal is {d:###.###}. The date is {today}");
-)
+
+            string s6 = sb.ToString();
+
+            string s7 = "hello";
+            
 
         }
 
