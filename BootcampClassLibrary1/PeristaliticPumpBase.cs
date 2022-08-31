@@ -10,12 +10,13 @@ namespace BootcampClassLibrary1
             public static iperistaliticPump MakePump()    // factory method
             {
                 //factory method that returns a specific pump based on the current Configuration
-                string configuredPump = ConfigurationManager.AppSettings["Pump"];
+                string configuredPump = ConfigurationManager.AppSettings["Pump"];    // key = Pump
 
                 return configuredPump switch
                 {
                     "Boxer25K" => new Boxer25K("COM1"),
                     "MasterFlexLS" => new MasterFlexLS("10.10.1.20", 2500),
+                    "Xyz"=> new Xyz("Engine"),
                     _ => throw new System.Exception("Invalid pump configuartion.")
                 };
             }

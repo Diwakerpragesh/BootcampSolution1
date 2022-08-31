@@ -79,22 +79,69 @@ class Program
 
 
         //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        // PeristaliticPump BoxPump = new Boxer25K("COM1");  
+
+        // PeristaliticPumpBase BoxPump = new Boxer25K("COM1");  
         // BoxPump.RPM = 100;
-        // BoxPump.Start();
+        //   BoxPump.Start();
 
 
         // PeristaliticPump Masterpump = new MasterFlexLS("10.10.1.20",2500);
-        //Masterpump.RPM = 100;
-        //Masterpump.Start();
+        // Masterpump.RPM = 100;
+        // Masterpump.Start();
 
-        // PeristaliticPumpBase makePump = PeristaliticPumpBase.MakePump();
-        iperistaliticPump imakePump = PeristaliticPumpFactory.MakePump();
+        // PeristaliticPumpBase makePump = PeristaliticPumpBase.MakePump(); 
 
+         iperistaliticPump imakePump = PeristaliticPumpFactory.MakePump();
+         imakePump.RPM = 100;
 
-        imakePump.RPM = 100;
-        imakePump.Start();
+        try
+        {
+            imakePump.Start();
+
+        }
+        catch (System.Exception ox)
+        {
+            Console.WriteLine("pump didn't start:" + ox.Message);
+        }
+
+        finally
+        {
+            // do some finalisation here regardless of exception
+        }
+
+        /*
+
+        string sNum = "15";
+        int i = int.Parse(sNum);
+        Console.WriteLine($"Yay, that parsed!, i={i}");
+        */
+
         
+        string sNum = "bad bad bad";
+
+        if (int.TryParse(sNum,out int i))
+        {
+            Console.WriteLine($"YAy that parsed! i={i}");
+        }
+        else
+        {
+            Console.WriteLine("Sory that didn't parsed");
+
+        }
+        try
+        {
+            int i = int.Parse(sNum);
+        }
+        catch (System.Exception Ex)
+        {
+            Console.WriteLine("Sorry, that didn;y parse"+Ex.Message);
+        }
+
+
+       
+
+
+        //iperistaliticPump imakePump = PeristaliticPumpFactory.MakePump();
 
 
 
