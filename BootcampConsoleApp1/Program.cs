@@ -53,8 +53,20 @@ class Program
         Instance.SubmitReview2(DateTime.Today, rating: 5);
         */
 
-        Class2 c2 = new Class2();
-        c2.
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        //STRING CONCEPT
+        //StringConcept c2 = new StringConcept();
+        //c2.DoSomethingWithString();
+
+
+
+
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        //ARRAY , LIST , DICTIONARY CONCEPT
+
+        Array_List al = new Array_List();
+        
+
     }
 }
 

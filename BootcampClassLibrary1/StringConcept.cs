@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace BootcampClassLibrary1
 {
-    public class Class2
+
+    // STRING CONCEPTS
+    public class StringConcept
     {
         public void DoSomethingWithString()
         {
@@ -24,7 +26,7 @@ namespace BootcampClassLibrary1
             string[] stringArr = s.Split(' ');
 
             int i = 100;
-            decimal d = 10.5m;
+            decimal d = 10.5555555555m;
             DateTime today = DateTime.Now;
 
             string s4 = string.Format("The integer is {0}. The decimal is {1}. The date is {2}.", i, d, today);
