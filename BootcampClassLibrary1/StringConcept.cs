@@ -23,7 +23,7 @@ namespace BootcampClassLibrary1
             
             string s3 = string.Join(' ',new string[] { STRING1, STRING2 });
 
-            string[] stringArr = s.Split(' ');
+            string[] stringArr = s3.Split(' ');
 
             int i = 100;
             decimal d = 10.5555555555m;

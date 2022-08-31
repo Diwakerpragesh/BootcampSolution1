@@ -6,75 +6,72 @@ using System.Runtime.ConstrainedExecution;
 
 namespace BootcampClassLibrary1
 {
-/*
     public class SimpleDataClass
     {
-     
-
+        public string s1 = "Hello Basin Bhai";
+        public string s2 { get; set; }
+        public string s3 { get; set; }
     }
-*/
     public class Class1
     {
         /*
-        public string s1 { get; set; }
-        public string s2 { get; set; }
-        public string s3 { get; set; }
-        public static void DoSomething()   // STATIC FUNCTION
-        {
-            Console.WriteLine("This is a Static Function");
-        }
+        
+       public static void DoSomething()   // STATIC FUNCTION
+       {
+           Console.WriteLine("This is a Static Function");
+       }
 
-        public void DoSomethingElse()   // NON-STATIC / Instance function
-        {
-            Console.WriteLine("Thi is a Non-Static Function");
-        }
+       public void DoSomethingElse()   // NON-STATIC / Instance function
+       {
+           Console.WriteLine("Thi is a Non-Static Function");
+       }
 
-        public DateTime ReturnAValue()
-        {
-            return DateTime.Now;    
-        }
-        public void AcceptSomeInputs(int i, string s)
-        {
-            Console.WriteLine(s);
-        }
+       public DateTime ReturnAValue()
+       {
+           return DateTime.Now;    
+       }
+       public void AcceptSomeInputs(int i, string s)
+       {
+           Console.WriteLine(s);
+       }
 
-        public void AcceptSomeInputs(int i)
-        {
-            Console.WriteLine(i);
-        }
+       public void AcceptSomeInputs(int i)
+       {
+           Console.WriteLine(i);
+       }
 
-        public void ProvideDefaults(int i=0,string s="Hello")
-        {
-            Console.WriteLine("default integer Value "+i);
-            Console.WriteLine("default string Value " + s);
-        }
+       public void ProvideDefaults(int i=0,string s="Hello")
+       {
+           Console.WriteLine("default integer Value "+i);
+           Console.WriteLine("default string Value " + s);
+       }
 
-        public void FunctionWithoutParameter (int i, out string s, out DateTime d)
-        {
-            s = string.Empty;
-            d = DateTime.MinValue;
-        }
+       public void FunctionWithoutParameter (int i, out string s, out DateTime d)
+       {
+           s = string.Empty;
+           d = DateTime.MinValue;
+       }
 
-        public (int , string, DateTime) ReturnATuple()
-        {
-            return (100, "Hello", DateTime.Now);
-        }
+       public (int , string, DateTime) ReturnATuple()
+       {
+           return (100, "Hello", DateTime.Now);
+       }
 
-        public void TupleAsInput (int i,(string s1,string s2, string s3))
-        {
+       public void TupleAsInput (int i,(string s1,string s2, string s3))
+       {
 
-        }
+       }
 
-        public void ClassAsInput (SimpleDataClass sdc)
-        {
+       public void ClassAsInput (SimpleDataClass sdc)
+       {
 
-        }
+       }
 
-        public SimpleDataClass ReturnAClass()
-        {
-            return new SimpleDataClass();
-        }
-        */
+       public SimpleDataClass ReturnAClass()
+       {
+           return new SimpleDataClass();
+       }
+       */
 
         public void SubmitReview (DateTime reviewDate,string reviewer ,int rating)
         {
@@ -97,6 +94,23 @@ namespace BootcampClassLibrary1
            Console.WriteLine("this is Submit review 2");
         }
 
+        public (int ,string ,DateTime) ReturnATuple()
+        {
+            return (100, "HELLO", DateTime.Now);
+        }
+
+        public void ClassAsInput (SimpleDataClass sdc)
+        {
+            Console.WriteLine(sdc);
+        }
+
+        public SimpleDataClass ReturnAClass()
+        {
+            return new SimpleDataClass();
+        }
+
+
+      
         
 
 
